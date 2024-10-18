@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="author" content="solrac">
+    <meta name="description" content="My Projects TW 2">
+    <meta name="keywords" content="HTML, CSS, JS, Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>My Profile</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/icono.png">
+    <!-- Bootstrap CSS offline -->
+    <!--<link href="./css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap Icons offline -->
+    <!--<link href="./icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <!-- Bootstrap CSS online -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons online -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- My CSS -->
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" width="60" alt="My logo">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center aling-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#aboutme" aria-current="page">Sobre mí <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#references">Referencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactme">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Me -->
+    <section class="myclass aling-items-stretch">
+        <div class="myclass-main d-flex flex-column justify-content-center aling-items-center">
+            <img class="myclass-pic rounded-circle" src="./images/perfil.png" width="100" alt="My selfie">
+            <h1>Hola, soy Gera</h1>
+            <h2>Y éste, es mi portafolio</h2>
+        </div>
+        <div class="myclass-label">            
+            <img class="myclass-imagen img-fluid" src="./images/inicio.jpg" alt="think twice code once">
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section id="aboutme" class="about-me section-oscura-inicio">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">¿Quién soy?</h2>
+            <p class="seccion-texto">
+                Mi nombre es Gerardo Cortez, Soy un estudiante univercitario de la costa de Puerto Escondido. 
+                Actualmente estoy desarrollandome como un Licenciado en Informática en la Univercidad del Mar.
+                Me emociona participar en proyectos de desarrollo de aplicaciones y diseño de páginas web.
+            </p>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experiencia section-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!-- Programming -->
+                <div class="experiencia-columna col-12 col-md-4">                    
+                    <p class="columna experiencia-title">Lenguajes</p>                    
+                    <i class="bi-braces"></i>
+                    <p>
+                        Me gusta aprender lenguajes nuevos. 
+                        Los lenguajes de programacion sobre los que trabajo son: 
+                    </p>
+                    <div class="badge-contenedor">                        
+                        <span class="badge">C</span>
+                        <span class="badge">C++</span>
+                        <span class="badge">Java</span>                        
+                    </div>
+                </div>
+                <!-- Design -->
+                <div class="experiencia-columna col-12 col-md-4">                    
+                    <p class="columna experiencia-title">Diseño</p>
+                    <i class="bi-window-desktop"></i>
+                    <p>
+                        Siempre e procurado que el usuario vea algo llamativo, simple y amigable. 
+                    </p>
+                    <div class="badge-contenedor">                        
+                        <span class="badge">HTML</span>                        
+                        <span class="badge">CSS</span>
+                        <span class="badge">JavaScrip</span>                        
+                    </div>
+                </div>
+                <!-- Management -->
+                <div class="experiencia-columna col-12 col-md-4">
+                    <p class="columna experiencia-title">Fortalezas</p>
+                    <i class="bi-person-gear"></i>
+                    <p>
+                        A lo largo de mi formación siempre e sido un optimista a la hora de enfentarme
+                        a proyectos desafiantes. 
+                    </p>
+                    <div class="badge-contenedor">                        
+                        <span class="badge">Paciente.</span>                        
+                        <span class="badge">Trabajo en equipo.</span>
+                        <span class="badge">Adaptación al cambio.</span>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="proyectos section-clara d-flex flex-column">
+        <h2 class="seccion-titulo">Mis Proyectos</h2>
+        <h3 class="seccion-descripcion">Los proyectos que e desarrollado a lo largo de mi formación son: </h3>
+        <!-- gallery -->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/turing.jpg" alt="Project 1">
+                        <div class="overlay">
+                            <p>Maquinas de Turing</p>
+                            <div class="icons-project">
+                                <a href="https://github.com/GeraSP11/Maquinas_De_Turing.git" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/integrales.jpg" alt="Project 1">
+                        <div class="overlay">
+                            <p>Aproximaciones de integrales</p>
+                            <div class="icons-project">
+                                <a href="https://github.com/GeraSP11/Metodos_Aproximacion_Inetgrales.git" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/Cubo_Rubik.jpg" alt="Project 1">
+                        <div class="overlay">
+                            <p>Catalogo de Cubos Rubik</p>
+                            <div class="icons-project">
+                                <a href="https://github.com/GeraSP11/Catalogo_Cubo_Rubik_PROTOTIPO.git" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips -->
+    <section class="tips justify-content-start">
+        <h2 class="seccion-titulo">Tips que me han ayudado</h2>
+        <div class="card">
+            <div class="card-header">
+                Sobre Programación
+            </div>
+            <ul class="list-group list-group-flush">
+                <a href="https://www.youtube.com/watch?v=il_xMpC4KCQ" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Empieza con proyectos pequeños</li>
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Practica de forma constante</li>
+                </a>
+                <a href="https://www.youtube.com/watch?v=vRJzKwdvYKo" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Aprende a depurar tu código</li>
+                </a>
+                <a href="https://www.youtube.com/watch?v=VxrIZGQfxmE" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Domina los conceptos básicos</li>
+                </a>
+                <a href="https://www.youtube.com/watch?v=sRKgA-1Xq88" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Busca recursos adicionales</li>
+                </a>
+            </ul>
+        </div>
+        <a href="https://platzi.com/blog/6-consejos-para-aprender-a-programar/" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">Más tips
+                <i class="bi-arrow-right-circle"></i>
+            </button>
+        </a>
+    </section>
+
+    <!-- References -->
+    <section id="references" class="recomendaciones section-clara">
+        <h2 class="seccion-titulo">Recomendaciones</h2>
+        <h3 class="seccion-descripcion">Algunas menciones sobre mi.</h3>
+        <div id="recomendaciones" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <img src="./images/neto.png" class="recomendacion-imagen rounded-circle" alt="...">
+                    <p class="recomendacion-texto"> Recomiendo a Gerardo por su gran capacidad de trabajo en equipo y su enfoque en la resolución de problemas. En varias ocasiones hemos trabajado juntos en proyectos complejos de programación y siempre ha demostrado una habilidad excepcional para identificar soluciones eficientes y creativas.</p>
+                    <div class="recomendacion-info">
+                        <p class="amigo">Ernesto</p>
+                        <p class="cargo">Lic. Informática</p>
+                    </div>                    
+                </div>
+            </div> 
+            <div class="carousel-item">
+                <div class="container">
+                    <img src="./images/salvador.png" class="recomendacion-imagen rounded-circle" alt="...">
+                    <p class="recomendacion-texto"> Durante la carrera de Informática, Gerardo ha sido un compañero con un gran dominio de las herramientas y lenguajes de programación que manejamos. Su capacidad de liderazgo es admirable y sabe gestionar muy bien los tiempos y las tareas de un equipo.</p>
+                    <div class="recomendacion-info">
+                        <p class="amigo">Salvador</p>
+                        <p class="cargo">Lic. Informática</p>
+                    </div>                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <img src="./images/kike.png" class="recomendacion-imagen rounded-circle" alt="...">
+                    <p class="recomendacion-texto"> Es un placer recomendar a Gerardo, ya que desde el inicio de la licenciatura ha demostrado ser una persona muy comprometida y proactiva. Siempre está dispuesto a compartir su conocimiento con los demás, lo que lo convierte en un compañero muy valioso.</p>
+                    <div class="recomendacion-info">
+                        <p class="amigo">Enrique</p>
+                        <p class="cargo">Lic. Informática</p>
+                    </div>                    
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#recomendaciones"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#recomendaciones"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contactme" class="contact section-oscura">
+        <div class="container">
+            <div class="container text-center rectangulo d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        Escribeme
+                    </div>
+                    <div class="col-12 col-md-4 description">
+                        El medio donde mas estoy activo para trabajar es mi correo electronico.
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto: gerardo.cortezramos@aulavirtual.umar.mx">
+                            <button type="button">
+                                Contacto
+                                <i class="bi-envelope-check"></i>
+                            </button>
+                        </a>                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-oscura d-flex flex-column aling-items-center justify-content-center">
+        <img class="footer-icon" src="./images/perfil.png" alt="Logo profile">
+        <p class="footer-text text-center">
+            "El código es como un rompecabezas: <br>cada error te acerca un paso más a la solución."
+        </p>
+        <div class="icons-sn d-flex flex-wrap aling-items-center justify-content-center">
+            <a href="https://x.com/Gerardo35659881?t=CZLrZTutsA6faLHITgB9SA&s=09" target="_blank" rel="noopener noreferrer">
+                <i class="bi-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/gera.11.sp?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                <i class="bi-facebook"></i>
+            </a>
+            <a href="https://github.com/GeraSP11" target="_blank" rel="noopener noreferrer">
+                <i class="bi-github"></i>
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <i class="bi-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/invites/contact/?igsh=13kprr47oudjn&utm_content=khvtfel" target="_blank" rel="noopener noreferrer">
+                <i class="bi-instagram"></i>
+            </a>
+            <a href="mailto: gerardo.cortezramos@aulavirtual.umar.mx" target="_blank" rel="noopener noreferrer">
+                <i class="bi-envelope"></i>
+            </a>
+        </div>
+        <div class="author"> Gera - DiseñoWeb -- UMAR (2024) &#169; </div>
+    </footer>
+
+    <!-- Bootstrap JS offline -->
+    <script src="./js/bootstrap.min.js"></script>    
+    <!-- Bootstrap JS online -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
+    <!-- My JS -->
+    <script src="./js/main.js"></script>    
+</body>
+</html>
