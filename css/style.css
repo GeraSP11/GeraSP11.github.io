@@ -8,6 +8,14 @@
     --color_7: #3F3D56;
 }
 
+body {
+    cursor: url('/images/cursor.png'), auto;
+}
+
+a:hover {
+    cursor: url('/images/seleccion.png'), auto;
+}
+
 /* Navbar */
 .navbar {
     padding: 2rem;
