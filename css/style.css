@@ -16,6 +16,14 @@ a:hover {
     cursor: url('/images/seleccion.png'), auto;
 }
 
+button:hover {
+    cursor: url('/images/seleccion.png'), auto;
+}
+
+i:hover {
+    cursor: url('/images/seleccion.png'), auto;
+}
+
 /* Navbar */
 .navbar {
     padding: 2rem;
@@ -229,6 +237,7 @@ h2 {
     background-color: var(--color_5);
     color: var(--color_2);
     border: #308ae7;
+    cursor: url('/images/seleccion.png'), auto;
 }
 
 .tips {
@@ -356,6 +365,7 @@ h2 {
 
 .contact button:hover {
     background-color: var(--color_0);
+    cursor: url('/images/seleccion.png'), auto;
 }
 
 footer {
