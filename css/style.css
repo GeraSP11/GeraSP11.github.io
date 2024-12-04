@@ -16,6 +16,10 @@ a:hover {
     cursor: url('/images/seleccion.png'), auto;
 }
 
+.card a:hover {
+    cursor: url('/images/tips.png'), auto;
+}
+
 button:hover {
     cursor: url('/images/seleccion.png'), auto;
 }
@@ -412,10 +416,12 @@ footer {
 
 .icons-sn a:hover {
     background-color: var(--color_3);
+    cursor: url('/images/redes.png'), auto;
 }
 
 .icons-sn a:hover i {
     color: var(--color_0);
+    cursor: url('/images/redes.png'), auto;
 }
 
 .author {
