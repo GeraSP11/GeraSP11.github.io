@@ -2,208 +2,778 @@
 <html lang="es">
 
 <head>
-    <!-- Metadatos INICIO -->
     <meta charset="UTF-8">
-    <meta name="author" content="Gerardo">
-    <meta name="description" content="Hola, este es mi portafolio.">
-    <meta name="keywords" content="HTML, CSS, JS, C++, Java, Licenciatura Informática, Informática, Licenciado,
-        univercitario, umar">
-    <!-- Metadatos FIN -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Hola!, soy Gera</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./images/icono.png">
+    <meta name="description" content="Portafolio profesional de Gerardo Cortez Ramos">
+    <title>Gerardo Cortez | Desarrollador Web</title>
 
-    <!-- Open Graph INICIO -->
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://gerasp11.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Hola!, soy Gera">
-    <meta property="og:description" content="Este es mi portafolio, hecha un vistazo.">
-    <meta property="og:image" content="https://gerasp11.github.io/images/vistaCompartir.png">
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="gerasp11.github.io">
-    <meta property="twitter:url" content="https://gerasp11.github.io/">
-    <meta name="twitter:title" content="Hola!, soy Gera">
-    <meta name="twitter:description" content="Este es mi portafolio, hecha un vistazo.">
-    <meta name="twitter:image" content="https://gerasp11.github.io/images/vistaCompartir.png">
-    <!-- Open Graph FIN -->
-
-    <!-- FUENTES INICIO-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Hachi+Maru+Pop&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <!-- FUENTES FIN-->
-
-    <!-- Bootstrap CSS offline -->
-    <!--<link href="./css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- Bootstrap Icons offline -->
-    <!--<link href="./icons/bootstrap-icons.css" rel="stylesheet"> -->
-    <!-- Bootstrap CSS online -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Bootstrap Icons online -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- My CSS -->
-    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-                aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-toggler">
-                <a class="navbar-brand" href="#">
-                    <img src="./images/logo.png" width="60" alt="My logo">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#inicio">
+                    <!-- <img src="assets/images/logo.png" alt="Tu Nombre" height="30"> -->
+                    Gera
                 </a>
-                <ul class="navbar-nav d-flex justify-content-center aling-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#aboutme" aria-current="page">Sobre mí <span
-                                class="visually-hidden">(current)</span></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Habilidades</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-dark rounded-pill px-3" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div style="height: 76px;"></div>
+    </header>
+
+    <section class="hero-section" id="inicio">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <span class="badge bg-dark mb-3 px-3 py-2">Lic. Informática</span>
+                    <h1 class="display-4 fw-bold mb-3">Hola, soy <span class="text-secondary">Gerardo</span></h1>
+                    <p class="lead mb-4">Estudiante de informática preparado para afrontar cualquier reto y seguir
+                        aprendidendo.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#projects" class="btn btn-dark px-4 py-2">Ver Proyectos</a>
+                        <a href="/assets/docs/CV_Gerardo_Cortez_Ramos.pdf" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-dark px-4 py-2">Ver Curriculum</a>
+                    </div>
+
+                    <div class="mt-5">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/GeraSP11" target="_blank" rel="noopener noreferrer"
+                                    class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" rel="noopener noreferrer" class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="mailto: cortezgerardo662@gmail.com" target="_blank" rel="noopener noreferrer"
+                                    class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                                        <path
+                                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-lg-2 order-1 text-center">
+                    <div class="profile-image-container">
+                        <img src="assets/image/Perfil.png" alt="Gera" class="img-fluid rounded-circle profile-image">
+                        <div class="blob-shape"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section py-5" id="projects">
+        <div class="container">
+
+            <div class="row mb-5">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="section-title">Mis Proyectos</h2>
+                    <p class="text-muted">Una muestra de mis trabajos más destacados y recientes.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div id="carousel-project1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/image/MenuCCR.png" class="d-block w-100"
+                                        alt="Proyecto 1 - Vista 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/image/CatalogoCCR.png" class="d-block w-100"
+                                        alt="Proyecto 1 - Vista 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/image/ConsultasCCR.png" class="d-block w-100"
+                                        alt="Proyecto 1 - Vista 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-project1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-project1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema de Inventariado de Cubos Rubik</h5>
+                            <p class="card-text">Una aplicación de escritorio para el resgistro, consulta y edicion de
+                                un catalogo de Cubos Rubik.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-light text-dark">JAVA 8</span>
+                                <span class="badge bg-light text-dark">SQLite</span>
+                                <span class="badge bg-light text-dark">JasperReports</span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex justify-content-between">
+                                <a href="https://github.com/GeraSP11/Catalogo_Cubo_Rubik.git"
+                                    class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div id="carousel-project2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/image/SWC1.png" class="d-block w-100" alt="Proyecto 2 - Vista 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/image/SWC2.png" class="d-block w-100" alt="Proyecto 2 - Vista 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/image/SWC3.png" class="d-block w-100" alt="Proyecto 2 - Vista 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-project2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-project2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sitio web del Clima</h5>
+                            <p class="card-text">Sitio web que muestra el pronóstico del tiempo en tiempo real
+                                utilizando consumo de APIs como OpenWeather, con interfaz interactiva.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-light text-dark">HTML</span>
+                                <span class="badge bg-light text-dark">CSS3</span>
+                                <span class="badge bg-light text-dark">JS</span>
+                                <span class="badge bg-light text-dark">API REST</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex justify-content-between">
+                                <a href="https://github.com/GeraSP11/Proyecto_Web_del_Clima.git"
+                                    class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div id="carousel-project3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/image/MTDC.png" class="d-block w-100"
+                                        alt="Proyecto 3 - Vista 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/image/MTSB.png" class="d-block w-100"
+                                        alt="Proyecto 3 - Vista 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-project3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-project3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Maquinas de Turing Básicas</h5>
+                            <p class="card-text">Programas sencillos que simulan el comportamiento de Maquinas de Turing
+                                para resolver problemas simples.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-light text-dark">C</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex justify-content-between">
+                                <a href="https://github.com/GeraSP11/Maquinas_De_Turing.git" class="btn btn-dark btn-sm"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div id="carousel-project3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/image/CIMT.gif" class="d-block w-100"
+                                        alt="Proyecto 3 - Vista 1">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-project3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-project3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Calculadoras de Aproximaciones de Integrales</h5>
+                            <p class="card-text">Calculadoras basicas de metodos númericos para el cálculo de integrales por aproximación.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-light text-dark">C</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex justify-content-between">
+                                <a href="https://github.com/GeraSP11/Metodos_Aproximacion_Inetgrales.git" class="btn btn-dark btn-sm"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section py-5" id="skills">
+        <div class="container">
+
+            <div class="row mb-5">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="section-title">Mis Habilidades</h2>
+                    <p class="text-muted">Tecnologías y competencias que he adquirido durante mi formación y
+                        experiencia.</p>
+                </div>
+            </div>
+
+            <div class="skill-tabs mb-4">
+                <ul class="nav nav-pills justify-content-center" id="skillTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="frontend-tab" data-bs-toggle="pill"
+                            data-bs-target="#frontend" type="button" role="tab" aria-controls="frontend"
+                            aria-selected="true">Frontend</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Proyectos</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="backend-tab" data-bs-toggle="pill" data-bs-target="#backend"
+                            type="button" role="tab" aria-controls="backend" aria-selected="false">Backend</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#references">Referencias</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mobile-tab" data-bs-toggle="pill" data-bs-target="#mobile"
+                            type="button" role="tab" aria-controls="mobile" aria-selected="false">Mobile</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactme">Contacto</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="other-tab" data-bs-toggle="pill" data-bs-target="#other"
+                            type="button" role="tab" aria-controls="other" aria-selected="false">Otras</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="soft-tab" data-bs-toggle="pill" data-bs-target="#soft"
+                            type="button" role="tab" aria-controls="soft" aria-selected="false">Soft Skills</button>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
 
-    <!-- Me -->
-    <section class="myclass aling-items-stretch">
-        <div class="myclass-main d-flex flex-column justify-content-center aling-items-center">
-            <img class="myclass-pic rounded-circle" src="./images/perfil.png" width="100" alt="My selfie">
-            <h1>Hola, soy Gera</h1>
-            <h2>Y éste, es mi portafolio</h2>
-        </div>
-        <div class="myclass-label">
-            <img class="myclass-imagen img-fluid" src="./images/inicio.jpg" alt="think twice code once">
-        </div>
-    </section>
+            <div class="tab-content" id="skillTabsContent">
+                <div class="tab-pane fade show active" id="frontend" role="tabpanel" aria-labelledby="frontend-tab">
+                    <div class="row g-4 justify-content-center">
 
-    <!-- About me -->
-    <section id="aboutme" class="about-me section-oscura-inicio">
-        <div class="contenedor">
-            <h2 class="seccion-titulo">¿Quién soy?</h2>
-            <p class="seccion-texto">
-                Mi nombre es Gerardo Cortez, Soy un estudiante univercitario de la costa de Puerto Escondido.
-                Actualmente estoy desarrollandome como un Licenciado en Informática en la Univercidad del Mar.
-                Me emociona participar en proyectos de desarrollo de aplicaciones y diseño de páginas web.
-            </p>
-        </div>
-    </section>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                                        <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                                        <path fill="#FFF"
+                                            d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z">
+                                        </path>
+                                        <path fill="#EEE"
+                                            d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">HTML5</h5>
+                                <div class="skill-level">Nivel: Intermedio</div>
+                            </div>
+                        </div>
 
-    <!-- Experience -->
-    <section class="experiencia section-clara">
-        <div class="container text-center">
-            <div class="row">
-                <!-- Programming -->
-                <div class="experiencia-columna col-12 col-md-4">
-                    <p class="columna experiencia-title">Lenguajes</p>
-                    <i class="bi-braces"></i>
-                    <p>
-                        Me gusta aprender lenguajes nuevos.
-                        Los lenguajes de programacion sobre los que trabajo son:
-                    </p>
-                    <div class="badge-contenedor">
-                        <span class="badge">C</span>
-                        <span class="badge">C++</span>
-                        <span class="badge">Java</span>
-                    </div>
-                </div>
-                <!-- Design -->
-                <div class="experiencia-columna col-12 col-md-4">
-                    <p class="columna experiencia-title">Diseño</p>
-                    <i class="bi-window-desktop"></i>
-                    <p>
-                        Siempre e procurado que el usuario vea algo llamativo, simple y amigable.
-                    </p>
-                    <div class="badge-contenedor">
-                        <span class="badge">HTML</span>
-                        <span class="badge">CSS</span>
-                        <span class="badge">JavaScrip</span>
-                    </div>
-                </div>
-                <!-- Management -->
-                <div class="experiencia-columna col-12 col-md-4">
-                    <p class="columna experiencia-title">Fortalezas</p>
-                    <i class="bi-person-gear"></i>
-                    <p>
-                        A lo largo de mi formación siempre e sido un optimista a la hora de enfentarme
-                        a proyectos desafiantes.
-                    </p>
-                    <div class="badge-contenedor">
-                        <span class="badge">Paciente.</span>
-                        <span class="badge">Trabajo en equipo.</span>
-                        <span class="badge">Adaptación al cambio.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                                        <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                                        <path fill="#FFF"
+                                            d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z">
+                                        </path>
+                                        <path fill="#EEE"
+                                            d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">CSS3</h5>
+                                <div class="skill-level">
+                                    Nivel: Intermedio
+                                </div>
+                            </div>
+                        </div>
 
-    <!-- Projects -->
-    <section id="projects" class="proyectos section-clara d-flex flex-column">
-        <h2 class="seccion-titulo">Mis Proyectos</h2>
-        <h3 class="seccion-descripcion">Los proyectos que e desarrollado a lo largo de mi formación son: </h3>
-        <!-- gallery -->
-        <div class="container text-center proyectos-contenedor">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src="./images/turing.jpg" alt="Project 1">
-                        <div class="overlay">
-                            <p>Maquinas de Turing</p>
-                            <div class="icons-project">
-                                <a href="https://github.com/GeraSP11/Maquinas_De_Turing.git" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi-github"></i>
-                                </a>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                                        <path fill="#000001"
+                                            d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">JavaScript</h5>
+                                <div class="skill-level">
+                                    Nivel: Intermedio
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0,0,256,256">
+                                        <g fill="#0001b4" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <g transform="scale(5.12,5.12)">
+                                                <path
+                                                    d="M29.86719,3.00781c-0.10547,0.01563 -0.21094,0.04688 -0.3125,0.09375c-0.85937,0.42578 -1.83594,1.69141 -2.02344,1.94141c-0.01172,0.01563 -0.02344,0.03125 -0.03125,0.04688c-0.96484,1.44531 -1.48047,3.13672 -1.5,4.89844c-0.01172,1.32031 0.24609,2.62891 0.76953,3.89063c1.21875,2.92578 3.75,5.34766 6.76172,6.48047c0.10156,0.03516 0.19922,0.07031 0.375,0.13281c0.01563,0.00781 0.16406,0.05469 0.1875,0.05859l0.10938,0.03906c0.15625,0.05078 0.31641,0.10156 0.47266,0.13281c0.79297,0.16016 1.56641,0.25 2.29297,0.27344c0.125,0 0.25,0.00391 0.375,0.00391c5.48047,0 7.60547,-3.86719 8.3125,-5.15625c0.07031,-0.125 0.12109,-0.22656 0.16797,-0.28906c0,-0.00391 0,-0.00391 0.00391,-0.00781c0.30859,-0.45703 0.19141,-1.07812 -0.26562,-1.39062c-0.45312,-0.30859 -1.07422,-0.19141 -1.38672,0.26563h-0.00391c-1.46094,2.15234 -3.96094,2.80469 -7.42578,1.94531c-0.25781,-0.0625 -0.53906,-0.16016 -0.78906,-0.25391c-0.32812,-0.11719 -0.65625,-0.25391 -0.96094,-0.40234c-0.60547,-0.30078 -1.17578,-0.66016 -1.69141,-1.05859c-3.04687,-2.36328 -4.23828,-7.28125 -2.45703,-10.12109c0.23828,-0.37891 0.19531,-0.87109 -0.10547,-1.20312c-0.22656,-0.25 -0.55469,-0.36328 -0.875,-0.32031zM21.00781,5c-0.22656,-0.00391 -0.45703,0.07031 -0.64453,0.22656c-1.51172,1.23047 -3.05859,3.24609 -3.125,3.32813c-0.00781,0.01563 -0.01562,0.02734 -0.02734,0.04297c-2.73437,3.98047 -2.94141,9.64453 -0.52344,14.42969c0.37891,0.75781 0.80859,1.48047 1.26563,2.14453l0.13672,0.19531c0.38672,0.56641 0.82031,1.20703 1.375,1.70703c0.19141,0.21875 0.39844,0.42969 0.60156,0.63281l0.09766,0.10156l0.08203,0.08203c0.20703,0.19922 0.41797,0.40234 0.63672,0.59766h0.00391c0.01563,0.02344 0.03906,0.03906 0.05859,0.05859c0.24609,0.21875 0.49609,0.42578 0.82813,0.6875l0.08984,0.06641c0.25781,0.20703 0.51953,0.40234 0.78906,0.59375c0.02734,0.01953 0.05469,0.03906 0.08203,0.05859c0.09375,0.0625 0.1875,0.12109 0.28125,0.1875l0.09375,0.0625l0.10938,0.07031c0.19922,0.13281 0.39453,0.25391 0.67188,0.41406c0.17969,0.10938 0.37109,0.21875 0.49609,0.28125c0.05469,0.03125 0.11328,0.0625 0.25,0.13672l0.30469,0.16016c0.01563,0.00781 0.08594,0.03906 0.10156,0.04688c0.19922,0.10156 0.40625,0.19922 0.61328,0.29297l0.31641,0.14063c0.20703,0.08984 0.41797,0.17578 0.67578,0.27344l0.11719,0.04297c0.00781,0.00781 0.10547,0.04297 0.11328,0.04688c0.1875,0.06641 0.37891,0.13281 0.57031,0.19531l0.4375,0.14453c0.21875,0.07422 0.47266,0.16016 0.75,0.20703c1.36328,0.22656 2.6875,0.34375 3.94141,0.34375c0.14844,0 0.29688,-0.00391 0.44141,-0.00391c11.03906,-0.24219 13.91016,-9.62109 13.9375,-9.71484c0.13672,-0.47266 -0.08594,-0.97656 -0.53125,-1.1875c-0.44531,-0.21094 -0.97656,-0.0625 -1.25391,0.34375c-2.79687,4.08594 -8.08594,5.8125 -13.47266,4.39063c-0.25,-0.0625 -0.49219,-0.13281 -0.79297,-0.23047c-0.05078,-0.01562 -0.09375,-0.03125 -0.17578,-0.0625c-0.17578,-0.05469 -0.34766,-0.11328 -0.54297,-0.1875l-0.27734,-0.10547c-0.16016,-0.0625 -0.32031,-0.125 -0.51562,-0.21094l-0.12891,-0.05859c-0.23828,-0.10156 -0.46875,-0.21484 -0.67578,-0.31641l-0.57031,-0.29687c-0.12891,-0.0625 -0.24219,-0.13281 -0.41797,-0.23828l-0.09766,-0.05469l-0.09766,-0.05859c-0.14453,-0.08594 -0.28906,-0.17578 -0.42187,-0.26953l-0.09375,-0.05859c-0.00781,-0.00391 -0.08594,-0.05859 -0.09375,-0.06641c-0.11719,-0.07422 -0.23047,-0.14844 -0.33984,-0.21875c-0.24219,-0.17187 -0.48047,-0.35156 -0.75781,-0.57031l-0.10937,-0.08984c-2.57812,-2.05859 -4.48437,-4.80859 -5.37891,-7.75781c-0.83203,-2.70703 -0.21484,-6.25 1.65234,-9.47656c0.24219,-0.41797 0.15234,-0.94922 -0.21875,-1.26172c-0.18359,-0.15625 -0.41016,-0.23828 -0.63672,-0.23828zM10.00391,8c-0.23828,0 -0.48047,0.08594 -0.67187,0.25781c-1.91016,1.71484 -3.33984,3.9375 -3.49609,4.19141c-4.08594,5.94922 -3.29687,15.19531 -0.49219,20.84766c0.05469,0.11719 0.11328,0.23047 0.17188,0.34375l0.03906,0.0625c0.05078,0.11328 0.10938,0.23047 0.12891,0.25391c0.03125,0.07422 0.07813,0.15625 0.09766,0.17969c0.04688,0.09766 0.09375,0.18359 0.17969,0.33203l0.32031,0.55078c0.04688,0.07422 0.09375,0.15234 0.10938,0.17969c0.0625,0.10156 0.12891,0.20703 0.19531,0.3125l0.15625,0.25c0.04688,0.07422 0.09375,0.14063 0.125,0.17969c0.15625,0.24219 0.3125,0.48438 0.48438,0.71484c0.00781,0.01172 0.01563,0.01953 0.02344,0.02734l0.0625,0.08594c0.14063,0.20313 0.28516,0.39844 0.41406,0.55859l0.57031,0.72266c0.00781,0.00781 0.07031,0.08203 0.07422,0.08984l0.08203,0.09375c0.17188,0.21094 0.35547,0.42188 0.53906,0.625c0.02734,0.03125 0.05469,0.05859 0.08203,0.08984c0.17578,0.19141 0.35547,0.38281 0.54297,0.58203l0.17969,0.17188c0.14844,0.15625 0.29688,0.30859 0.45313,0.45313c0,0.00391 0.07422,0.07422 0.07422,0.07422l0.15625,0.14453c0.1875,0.17969 0.38281,0.35938 0.53125,0.48438c0.00781,0.01172 0.14844,0.13281 0.16016,0.14063c0.18359,0.16406 0.36719,0.32031 0.55469,0.47266l0.95703,0.75781c0.16016,0.11719 0.32422,0.23438 0.51172,0.37109c0.0625,0.04688 0.12891,0.09375 0.19531,0.13672c0.02734,0.02344 0.05859,0.04688 0.07813,0.05859l0.71875,0.48047c0.26172,0.17188 0.52344,0.33203 0.84375,0.52344l0.17188,0.09766c0.19922,0.11719 0.40234,0.23438 0.59375,0.33594c0.11328,0.0625 0.22656,0.11719 0.32422,0.16797c0.13672,0.07422 0.28516,0.15625 0.51172,0.26563c0.01953,0.01172 0.17969,0.08984 0.19922,0.09766c0.22656,0.11328 0.45703,0.21875 0.74609,0.34766c0,0.00391 0.09375,0.04688 0.09375,0.04688c0.26563,0.11328 0.52344,0.22266 0.86328,0.35938c0.05469,0.02344 0.10938,0.04297 0.12109,0.04688c0.24219,0.09375 0.49609,0.1875 0.70313,0.26172c0.01953,0.00781 0.125,0.05078 0.14453,0.05859c0.27734,0.09375 0.55078,0.18359 0.90234,0.29297c0.05859,0.01953 0.12109,0.03906 0.12891,0.03906l0.19922,0.0625c0.24219,0.07422 0.48438,0.15234 0.74609,0.20313c1.85938,0.33984 3.67578,0.51563 5.39453,0.51563h0.00391c14.32422,0 18.88672,-11.52734 18.93359,-11.64453c0.17578,-0.46484 -0.01562,-0.98828 -0.45312,-1.23047c-0.42969,-0.23828 -0.97656,-0.125 -1.28125,0.26953c-3.67578,4.83984 -10.60937,6.63672 -18.54687,4.8125c-0.19141,-0.04687 -0.38672,-0.10156 -0.57812,-0.16016l-0.375,-0.11328c-0.25391,-0.07812 -0.50781,-0.16406 -0.75391,-0.25c-0.00391,0 -0.11719,-0.04297 -0.11719,-0.04297c-0.21875,-0.07422 -0.4375,-0.16016 -0.62891,-0.23437l-0.21875,-0.08594c-0.24219,-0.09766 -0.48437,-0.19922 -0.71875,-0.30469l-0.13672,-0.05859c-0.21094,-0.09766 -0.41406,-0.19141 -0.61719,-0.29297c-0.01562,-0.00781 -0.17578,-0.08594 -0.19141,-0.08984c-0.14062,-0.07031 -0.28125,-0.14453 -0.46094,-0.24219l-0.81641,-0.4375c-0.08203,-0.05469 -0.16797,-0.10547 -0.25,-0.14844c-0.24609,-0.15234 -0.5,-0.30469 -0.75,-0.46484c-0.05859,-0.03516 -0.10937,-0.07422 -0.20703,-0.14062c-0.17187,-0.10937 -0.33984,-0.22266 -0.58594,-0.39453l-0.09766,-0.07031c-0.16797,-0.11719 -0.33203,-0.24219 -0.46875,-0.34375c-0.08594,-0.0625 -0.17187,-0.13281 -0.3125,-0.23828c-0.125,-0.09766 -0.25,-0.19141 -0.36719,-0.28516l-0.21875,-0.17969c-0.18359,-0.14844 -0.35547,-0.30469 -0.53516,-0.45703c-0.02344,-0.02344 -0.04297,-0.03906 -0.07031,-0.05859c-0.19922,-0.18359 -0.40234,-0.36719 -0.64453,-0.59766l-0.70703,-0.70312c-0.17187,-0.17578 -0.34375,-0.35547 -0.53906,-0.57031c-0.17969,-0.19922 -0.35156,-0.39844 -0.58203,-0.67187l-0.42187,-0.51562c-0.05078,-0.07422 -0.10547,-0.14844 -0.17187,-0.22656c-0.14453,-0.19531 -0.28906,-0.38672 -0.43359,-0.58984c-3.89062,-5.35937 -4.90625,-16.54687 -1.875,-20.64453c0.30469,-0.41016 0.25,-0.98828 -0.13281,-1.33594c-0.1875,-0.17187 -0.42969,-0.25781 -0.66797,-0.25781z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">jQuery</h5>
+                                <div class="skill-level">
+                                    Nivel: Intermedio
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#6c19ff"
+                                            d="M6.391,10.671c-0.085-2.448,1.822-4.706,4.401-4.706h26.42c2.578,0,4.486,2.258,4.401,4.706	c-0.082,2.352,0.024,5.398,0.791,7.882c0.769,2.492,2.066,4.067,4.19,4.269v2.295c-2.124,0.202-3.421,1.777-4.19,4.269	c-0.767,2.484-0.873,5.53-0.791,7.882c0.085,2.448-1.822,4.706-4.401,4.706h-26.42c-2.578,0-4.486-2.258-4.4-4.706	c0.082-2.352-0.025-5.398-0.791-7.882c-0.769-2.492-2.069-4.067-4.194-4.269v-2.295c2.124-0.202,3.425-1.777,4.194-4.269	C6.367,16.07,6.473,13.023,6.391,10.671z">
+                                        </path>
+                                        <linearGradient id="Is-EGaxKcc0Cic9QMqyzGa_EzPCiQUqWWEa_gr1" x1="17.846"
+                                            x2="27.078" y1="-147.541" y2="-163.153"
+                                            gradientTransform="matrix(1 0 0 -1 0 -132)" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#fff"></stop>
+                                            <stop offset="1" stop-color="#f1e5fc"></stop>
+                                        </linearGradient>
+                                        <path fill="url(#Is-EGaxKcc0Cic9QMqyzGa_EzPCiQUqWWEa_gr1)"
+                                            d="M25.042,34.016c4.366,0,6.997-2.138,6.997-5.664c0-2.665-1.877-4.595-4.665-4.9v-0.111	c2.048-0.333,3.655-2.235,3.655-4.359c0-3.026-2.389-4.997-6.03-4.997h-8.192v20.031H25.042z M19.994,16.525h4.238	c2.304,0,3.612,1.027,3.612,2.887c0,1.985-1.522,3.096-4.281,3.096h-3.57V16.525z M19.994,31.475v-6.594h4.21	c3.015,0,4.579,1.11,4.579,3.276c0,2.165-1.522,3.318-4.394,3.318H19.994z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">Bootstrap</h5>
+                                <div class="skill-level">
+                                    Nivel: Intermedio
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src="./images/integrales.jpg" alt="Project 1">
-                        <div class="overlay">
-                            <p>Aproximaciones de integrales</p>
-                            <div class="icons-project">
-                                <a href="https://github.com/GeraSP11/Metodos_Aproximacion_Inetgrales.git"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <i class="bi-github"></i>
-                                </a>
+
+                <div class="tab-pane fade" id="backend" role="tabpanel" aria-labelledby="backend-tab">
+                    <div class="row g-4 justify-content-center">
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#F44336"
+                                            d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z">
+                                        </path>
+                                        <path fill="#F44336"
+                                            d="M23.878,17.27c-0.192,2.516,2.229,3.857,2.299,5.695c0.056,1.496-1.447,2.743-1.447,2.743s2.728-0.536,3.579-2.818c0.945-2.534-1.834-4.269-1.548-6.298c0.267-1.938,6.031-5.543,6.031-5.543S24.311,11.611,23.878,17.27z">
+                                        </path>
+                                        <g>
+                                            <path fill="#1565C0"
+                                                d="M32.084 25.055c1.754-.394 3.233.723 3.233 2.01 0 2.901-4.021 5.643-4.021 5.643s6.225-.742 6.225-5.505C37.521 24.053 34.464 23.266 32.084 25.055zM29.129 27.395c0 0 1.941-1.383 2.458-1.902-4.763 1.011-15.638 1.147-15.638.269 0-.809 3.507-1.638 3.507-1.638s-7.773-.112-7.773 2.181C11.683 28.695 21.858 28.866 29.129 27.395z">
+                                            </path>
+                                            <path fill="#1565C0"
+                                                d="M27.935,29.571c-4.509,1.499-12.814,1.02-10.354-0.993c-1.198,0-2.974,0.963-2.974,1.889c0,1.857,8.982,3.291,15.63,0.572L27.935,29.571z">
+                                            </path>
+                                            <path fill="#1565C0"
+                                                d="M18.686,32.739c-1.636,0-2.695,1.054-2.695,1.822c0,2.391,9.76,2.632,13.627,0.205l-2.458-1.632C24.271,34.404,17.014,34.579,18.686,32.739z">
+                                            </path>
+                                            <path fill="#1565C0"
+                                                d="M36.281,36.632c0-0.936-1.055-1.377-1.433-1.588c2.228,5.373-22.317,4.956-22.317,1.784c0-0.721,1.807-1.427,3.477-1.093l-1.42-0.839C11.26,34.374,9,35.837,9,37.017C9,42.52,36.281,42.255,36.281,36.632z">
+                                            </path>
+                                            <path fill="#1565C0"
+                                                d="M39,38.604c-4.146,4.095-14.659,5.587-25.231,3.057C24.341,46.164,38.95,43.628,39,38.604z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">Java</h5>
+                                <div class="skill-level">
+                                    Nivel: Alto
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0,0,256,256">
+                                        <g fill="#000098" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <g transform="scale(5.12,5.12)">
+                                                <path
+                                                    d="M43.64063,1.00195c-1.46338,-0.04058 -3.02891,0.76641 -4.58203,2.14453c-0.369,0.328 -0.73752,0.69208 -1.10352,1.08008c-4.25,4.509 -8.19588,12.86028 -9.42187,19.23828c0.477,0.968 0.85166,2.20444 1.09766,3.14844c0.063,0.242 0.11906,0.46811 0.16406,0.66211c0.108,0.458 0.16602,0.75391 0.16602,0.75391c0,0 -0.03736,-0.14366 -0.19336,-0.59766c-0.03,-0.087 -0.06452,-0.18097 -0.10352,-0.29297c-0.017,-0.046 -0.03845,-0.10211 -0.06445,-0.16211c-0.277,-0.645 -1.04481,-2.00566 -1.38281,-2.59766c-0.289,0.852 -0.54286,1.64814 -0.75586,2.36914c0.974,1.783 1.56641,4.83789 1.56641,4.83789c0,0 -0.04992,-0.19767 -0.29492,-0.88867c-0.217,-0.611 -1.29964,-2.50912 -1.55664,-2.95312c-0.439,1.62 -0.61403,2.71447 -0.45703,2.98047c0.305,0.516 0.59656,1.40467 0.85156,2.38867c0.089,0.341 0.17195,0.69292 0.25195,1.04492c-0.265,2.327 -0.32722,4.66452 -0.19922,6.97852c0.133,2.508 0.48386,4.98378 0.88086,7.42578c0.042,0.257 0.27802,0.44297 0.54102,0.41797c0.275,-0.026 0.47717,-0.26992 0.45117,-0.54492c-0.125,-1.331 -0.23083,-2.65842 -0.29883,-3.98242l0.06055,0.59375c-0.095,-1.189 -0.12131,-2.46903 -0.07031,-3.83203c0.181,-4.834 1.29461,-10.66423 3.34961,-16.74023c3.473,-9.172 8.29022,-16.53287 12.69922,-20.04687c-4.019,3.63 -9.45794,15.37947 -11.08594,19.73047c-1.823,4.872 -3.11553,9.44322 -3.89453,13.82422c1.344,-4.107 5.6875,-5.87109 5.6875,-5.87109c0,0 2.13209,-2.62881 4.62109,-6.38281c-1.491,0.34 -3.94172,0.92258 -4.76172,1.26758c-1.21,0.508 -1.53516,0.68164 -1.53516,0.68164c0,0 3.91925,-2.38775 7.28125,-3.46875c4.625,-7.284 9.66384,-17.6322 4.58984,-22.1582c-0.77963,-0.69525 -1.62002,-1.02448 -2.49805,-1.04883zM9,3c-2.21,0 -4,1.79 -4,4v33c0,2.21 1.79,4 4,4h16.84961c-0.1,-0.9 -0.16875,-1.82977 -0.21875,-2.75977c-0.13,-2.32 -0.08008,-4.67094 0.16992,-6.96094c-0.06,-0.23 -0.10992,-0.45016 -0.16992,-0.66016c-0.34,-1.32 -0.57086,-1.76891 -0.63086,-1.87891c-0.45,-0.75 -0.52977,-1.65953 0.24023,-4.51953c0.661,-2.265 3.54614,-16.0577 11.11914,-24.2207z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">SQLite</h5>
+                                <div class="skill-level">
+                                    Nivel: Alto
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 48 48">
+                                        <linearGradient id="LM~2Uo~9gOxvOpOltQzTja_DakakaPez2uy_gr1" x1="21.893"
+                                            x2="26.848" y1="7.481" y2="40.144" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#00a3a6"></stop>
+                                            <stop offset=".5" stop-color="#038489"></stop>
+                                            <stop offset="1" stop-color="#026d71"></stop>
+                                        </linearGradient>
+                                        <path fill="url(#LM~2Uo~9gOxvOpOltQzTja_DakakaPez2uy_gr1)"
+                                            d="M47.776,8.156c-0.13-0.107-0.296-0.163-0.465-0.156c-0.463,0-1.062,0.314-1.385,0.483 l-0.128,0.065c-0.541,0.262-1.13,0.41-1.73,0.435c-0.615,0.02-1.146,0.056-1.836,0.128c-4.091,0.421-5.916,3.556-7.674,6.589 c-0.957,1.65-1.946,3.363-3.301,4.672c-0.28,0.272-0.578,0.525-0.892,0.758c-1.402,1.042-3.163,1.787-4.533,2.314 c-1.319,0.504-2.759,0.957-4.15,1.396c-1.275,0.401-2.478,0.781-3.584,1.191c-0.499,0.185-0.923,0.327-1.298,0.452 c-1.008,0.327-1.735,0.578-2.797,1.309c-0.414,0.283-0.83,0.589-1.111,0.818c-0.843,0.673-1.589,1.459-2.217,2.335 c-0.54,0.809-1.164,1.558-1.862,2.235c-0.224,0.219-0.622,0.327-1.218,0.327C6.899,33.509,4.984,33,3.699,33 C1.987,33,0.208,33.627,0,34c0,0,2.911,1.894,3.014,1.996c-0.111,0.164-1.818,2.503-2.002,3.011 c2.494,0.063,3.956-0.306,5.356-0.983c0.406-0.196,0.818-0.398,1.309-0.605c0.818-0.355,1.699-0.921,2.633-1.52 c1.222-0.797,2.501-1.615,3.741-2.01c1.019-0.311,2.081-0.46,3.147-0.442c1.309,0,2.687,0.175,4.016,0.345 c0.99,0.128,2.78,0.148,3.786,0.208c0.269,0.016,1.84,0.034,2.946,0.027C26.758,36.642,25,39,25,39s6,0,8.548-5.781 c0.034-0.067,0.063-0.136,0.096-0.203c1.58-0.377,5.63-2.513,6.706-8.405c0.504-1.712,0.874-3.412,1.2-4.909 c0.389-1.8,0.725-3.343,1.109-3.942c0.604-0.939,1.525-1.574,2.417-2.191c0.121-0.083,0.244-0.164,0.363-0.252 c1.121-0.787,2.235-1.695,2.481-3.389V9.889C48.098,8.626,47.948,8.303,47.776,8.156z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">MariaDB</h5>
+                                <div class="skill-level">
+                                    Nivel: Alto
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#283593" fill-rule="evenodd"
+                                            d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#5c6bc0" fill-rule="evenodd"
+                                            d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#fff" fill-rule="evenodd"
+                                            d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#3949ab" fill-rule="evenodd"
+                                            d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">C</h5>
+                                <div class="skill-level">
+                                    Nivel: Alto
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#00549d" fill-rule="evenodd"
+                                            d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#0086d4" fill-rule="evenodd"
+                                            d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#fff" fill-rule="evenodd"
+                                            d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#0075c0" fill-rule="evenodd"
+                                            d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#fff" fill-rule="evenodd" d="M31 21H33V27H31zM38 21H40V27H38z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#fff" fill-rule="evenodd" d="M29 23H35V25H29zM36 23H42V25H36z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">C++</h5>
+                                <div class="skill-level">
+                                    Nivel: Intermedio
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src="./images/Cubo_Rubik.jpg" alt="Project 1">
-                        <div class="overlay">
-                            <p>Catalogo de Cubos Rubik</p>
-                            <div class="icons-project">
-                                <a href="https://github.com/GeraSP11/Catalogo_Cubo_Rubik_PROTOTIPO.git" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi-github"></i>
-                                </a>
+
+                <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#37474f"
+                                            d="M18.125,7L18,15H5c0,0,0-2.567,0-4.5S6.567,7,8.5,7S18.125,7,18.125,7z">
+                                        </path>
+                                        <path fill="#00e676"
+                                            d="M30.009,5.627l1.85-3.117c0.282-0.475,0.125-1.089-0.349-1.371c-0.475-0.283-1.088-0.125-1.371,0.349	l-1.945,3.276C26.889,4.276,25.478,4,24,4s-2.889,0.276-4.195,0.765L17.86,1.489c-0.282-0.474-0.895-0.632-1.371-0.349	c-0.475,0.282-0.631,0.896-0.349,1.371l1.85,3.117c-3.301,1.92-5.608,5.362-5.94,9.373H35.95	C35.618,10.989,33.311,7.547,30.009,5.627z">
+                                        </path>
+                                        <circle cx="19" cy="10" r="1" fill="#fff"></circle>
+                                        <circle cx="29" cy="10" r="1" fill="#fff"></circle>
+                                        <path fill="#448aff"
+                                            d="M39.5,14c-0.494,0-30.14,0-31,0C6.567,14,5,12.433,5,10.5c0,0.001,0,25.067,0,27S6.567,41,8.5,41	C9.36,41,43,41,43,41s0-21.567,0-23.5S41.433,14,39.5,14z">
+                                        </path>
+                                        <path fill="#37474f"
+                                            d="M39.5,21c-0.342,0-0.871,0-1.5,0v25.875c0.629,0,1.158,0,1.5,0c1.933,0,3.5-1.567,3.5-3.5	S43,17.5,43,17.5C43,19.433,41.433,21,39.5,21z">
+                                        </path>
+                                        <path fill="#37474f"
+                                            d="M33.768,44.061l-7.444-15.819C27.335,27.515,28,26.337,28,25c0-1.858-1.28-3.411-3-3.858V19	c0-0.552-0.448-1-1-1s-1,0.448-1,1v2.142c-1.72,0.447-3,2-3,3.858c0,1.337,0.665,2.515,1.676,3.242l-7.44,15.811	c-0.424,0.901-0.201,2.025,0.62,2.588c1.047,0.718,2.437,0.309,2.954-0.79l4.643-9.866c0.616-1.309,2.479-1.309,3.095,0l4.643,9.866	C30.531,46.576,31.25,47,32.001,47c0.411,0,0.832-0.128,1.203-0.402C33.982,46.024,34.18,44.936,33.768,44.061z M24,23	c1.103,0,2,0.897,2,2s-0.897,2-2,2s-2-0.897-2-2S22.897,23,24,23z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">Android Studio</h5>
+                                <div class="skill-level">
+                                    Nivel: Básico
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
+                    <div class="row g-4 justify-content-center">
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#E0E0E0"
+                                            d="M27,3.603C16.783,3.603,8.5,12.735,8.5,24S16.783,44.397,27,44.397S45.5,35.265,45.5,24S37.217,3.603,27,3.603z M27,37.756c-6.026,0-10.91-6.159-10.91-13.756S20.974,10.244,27,10.244S37.91,16.403,37.91,24S33.026,37.756,27,37.756z">
+                                        </path>
+                                        <path fill="#065DFF"
+                                            d="M18.809,33.088c1.031-0.257,1.987-0.245,2.616,0.313c1.394,1.239,0.556,3.973-1.413,5.965s-4.53,2.505-5.716,1.304c-0.602-0.609-0.862-1.418-0.589-2.484l0.714,0.757c-0.063,0.281,0.084,0.849,0.613,1.138c0.845,0.462,2.512,0.321,4.244-1.432s2.631-3.667,1.533-4.653c-0.281-0.253-1.058-0.286-1.467-0.198L18.809,33.088z"
+                                            clip-path="url(#SVGID_2_)"></path>
+                                        <path fill="#00968D"
+                                            d="M19.959,13.519c0.412,0.99,0.519,1.84,0.072,2.555c-0.991,1.587-3.821,1.116-6.073-0.54s-3.153-4.136-2.167-5.509c0.5-0.697,1.498-0.976,2.581-0.871l-0.943,1.024c-0.284-0.019-0.555,0.21-0.707,0.646c-0.221,0.634-0.095,1.883,1.886,3.34c1.982,1.457,3.643,2.159,4.598,1.312c0.203-0.18,0.15-0.678,0-1.074C19.479,14.036,19.728,13.75,19.959,13.519z"
+                                            clip-path="url(#SVGID_4_)"></path>
+                                        <path fill="#065DFF"
+                                            d="M20.104,34.661c1.387-0.174,2.536,0.163,2.946,0.901c0.765,1.376-0.33,3.883-2.83,5.474c-2.357,1.5-5.102,1.391-5.777,0.119c-0.403-0.759-0.678-1.4-0.195-2.386l0.654,0.664c-0.222,0.687,0.062,0.879,0.543,1.245c0.875,0.665,2.076,0.76,4.126-0.597c2.051-1.356,2.971-2.825,2.535-4.056c-0.146-0.413-0.55-0.596-1.262-0.665C20.605,35.144,20.318,34.896,20.104,34.661z"
+                                            clip-path="url(#SVGID_6_)"></path>
+                                        <path fill="#00968D"
+                                            d="M12.9,10.838c-1.394,0.094-2.638,1.239-2.813,2.181c-0.291,1.572,0.111,3.278,3.11,4.803c3.863,1.964,6.551,0.615,7.275-0.85c0.381-0.771,0.814-2.655-0.086-3.881c-0.246,0.229-0.492,0.487-0.736,0.767c0.345,0.632,0.103,2.418-0.302,2.868c-0.736,0.82-2.725,0.955-4.963-0.05c-2.271-1.019-3.046-2.716-2.898-3.45c0.086-0.43,0.271-0.799,0.691-0.978C12.328,11.866,12.603,11.2,12.9,10.838z"
+                                            clip-path="url(#SVGID_8_)"></path>
+                                        <path fill="#065DFF"
+                                            d="M23.236,36.941c1.334-0.574,2.582-0.209,2.823,0.755c0.431,1.727-0.214,4.002-2.689,5.646c-2.308,1.533-4.456,1.338-5.742,0.319c-0.545-0.431-1.285-1.662-0.778-2.69l1.014,0.73c-0.029,0.591,0.098,0.724,0.472,1.005c1.118,0.841,2.733,0.705,4.377-0.409c2.136-1.448,2.462-3.301,2.343-4.243c-0.048-0.382-0.155-0.599-0.825-0.675C23.9,37.261,23.568,37.112,23.236,36.941z"
+                                            clip-path="url(#SVGID_10_)"></path>
+                                        <path fill="#00968D"
+                                            d="M12.101,10.394c0.289,0.177,0.164,0.646-0.087,0.789c-0.173,0.098-1.086-0.106-1.179-0.119C9.73,10.97,8.118,11.14,7.266,12.132c-0.454,0.529-0.483,0.639-0.733,1.138c-0.938,2.013-1.459,0.745-0.763-0.597c0.796-1.591,2.226-2.449,3.991-2.564C10.63,10.052,11.725,10.164,12.101,10.394z"
+                                            clip-path="url(#SVGID_12_)"></path>
+                                        <path fill="#065DFF"
+                                            d="M36.084,31.622c-0.244,0.444-0.314,0.574-0.505,0.877c-5.531-1.368-11.635,0.848-13.739,2.355c-0.395,0.165-0.601-0.167-0.628-0.225c-0.09-0.191-0.076-0.433,0.176-0.611c0.16-0.1,0.16-0.1,0.321-0.199c2.146-1.282,5.28-2.568,9.628-2.661C32.791,31.127,35.871,31.369,36.084,31.622z"
+                                            clip-path="url(#SVGID_14_)"></path>
+                                        <path fill="#065DFF"
+                                            d="M43.232,33.794c0.015,0.01,0.184,0.127,0.199,0.137c3.106,2.186,3.796,5,1.552,7.344c-0.699,0.73-2.709,2.353-5.932,2.265c0,0-1.773-0.689,0.034-0.953c2.548,0.259,4.578-1.392,5.212-2.034c1.871-1.892,0.927-4.126-1.523-5.891L43.232,33.794z"
+                                            clip-path="url(#SVGID_16_)"></path>
+                                        <path fill="#BDBDBD" d="M6.615 19.11L2.648 18.034 1.875 20.953 5.842 22.029z"
+                                            clip-path="url(#SVGID_18_)"></path>
+                                        <path fill="#BDBDBD"
+                                            d="M33.132 43.685L34.195 39.671 31.31 38.889 30.247 42.903z"
+                                            clip-path="url(#SVGID_20_)"></path>
+                                        <path fill="#00968D"
+                                            d="M7.761 15.509L6.177 12.733 3.434 14.336 2.468 17.985 6.795 19.159z"
+                                            clip-path="url(#SVGID_22_)"></path>
+                                        <path fill="#065DFF"
+                                            d="M36.69 44.845L39.615 43.243 37.85 40.466 34.243 39.489 33.084 43.867z"
+                                            clip-path="url(#SVGID_24_)"></path>
+                                    </svg>
+                                </div>
+                                <h5 class="skill-name">Redes</h5>
+                                <div class="skill-level">
+                                    Nivel: Intermedio
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img width="64" height="64"
+                                        src="https://img.icons8.com/external-colored-outline-lafs/64/external-Microcontroller-iiot-colored-outline-lafs.png"
+                                        alt="external-Microcontroller-iiot-colored-outline-lafs" />
+                                </div>
+                                <h5 class="skill-name">Microcontroladores</h5>
+                                <div class="skill-level">
+                                    Nivel: Intermedio
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="soft" role="tabpanel" aria-labelledby="soft-tab">
+                    <div class="row g-4 justify-content-center">
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card soft-skill">
+                                <div class="skill-icon">
+                                    <img width="48" height="48"
+                                        src="https://img.icons8.com/color/48/conference-foreground-selected-skin-type-7.png"
+                                        alt="conference-foreground-selected-skin-type-7" />
+                                </div>
+                                <h5 class="skill-name">Trabajo en equipo</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card soft-skill">
+                                <div class="skill-icon">
+                                    <img width="48" height="48"
+                                        src="https://img.icons8.com/color/48/realtime-protection.png"
+                                        alt="realtime-protection" />
+                                </div>
+                                <h5 class="skill-name">Puntualidad</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card soft-skill">
+                                <div class="skill-icon">
+                                    <img width="48" height="48" src="https://img.icons8.com/color/48/idea-sharing.png"
+                                        alt="idea-sharing" />
+                                </div>
+                                <h5 class="skill-name">Resolución de problemas</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="skill-card soft-skill">
+                                <div class="skill-icon">
+                                    <img width="48" height="48" src="https://img.icons8.com/color/48/communication.png"
+                                        alt="communication" />
+                                </div>
+                                <h5 class="skill-name">Comunicación</h5>
                             </div>
                         </div>
                     </div>
@@ -212,162 +782,128 @@
         </div>
     </section>
 
-    <!-- Tips -->
-    <section class="tips justify-content-start">
-        <h2 class="seccion-titulo">Tips que me han ayudado</h2>
-        <div class="card">
-            <div class="card-header">
-                Sobre Programación
-            </div>
-            <ul class="list-group list-group-flush">
-                <a href="https://www.youtube.com/watch?v=il_xMpC4KCQ" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Empieza con proyectos pequeños</li>
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Practica de forma constante</li>
-                </a>
-                <a href="https://www.youtube.com/watch?v=vRJzKwdvYKo" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Aprende a depurar tu código</li>
-                </a>
-                <a href="https://www.youtube.com/watch?v=VxrIZGQfxmE" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Domina los conceptos básicos</li>
-                </a>
-                <a href="https://www.youtube.com/watch?v=sRKgA-1Xq88" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Busca recursos adicionales</li>
-                </a>
-            </ul>
-        </div>
-        <a href="https://platzi.com/blog/6-consejos-para-aprender-a-programar/" target="_blank"
-            rel="noopener noreferrer">
-            <button type="button" class="btn btn-info">Más tips
-                <i class="bi-arrow-right-circle"></i>
-            </button>
-        </a>
-    </section>
-
-    <!-- References -->
-    <section id="references" class="recomendaciones section-clara">
-        <h2 class="seccion-titulo">Recomendaciones</h2>
-        <h3 class="seccion-descripcion">Algunas menciones sobre mi.</h3>
-        <div id="recomendaciones" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container">
-                        <img src="./images/neto.png" class="recomendacion-imagen rounded-circle" alt="...">
-                        <p class="recomendacion-texto"> En varias ocasiones hemos trabajado juntos en
-                            proyectos complejos de programación y siempre ha demostrado una habilidad excepcional para
-                            identificar soluciones eficientes y creativas.</p>
-                        <div class="recomendacion-info">
-                            <p class="amigo">Ernesto</p>
-                            <p class="cargo">Lic. Informática</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <img src="./images/salvador.png" class="recomendacion-imagen rounded-circle" alt="...">
-                        <p class="recomendacion-texto"> Durante la carrera de Informática, Gerardo ha sido un compañero
-                            con un gran dominio de las herramientas y lenguajes de programación que manejamos.</p>
-                        <div class="recomendacion-info">
-                            <p class="amigo">Salvador</p>
-                            <p class="cargo">Lic. Informática</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <img src="./images/kike.png" class="recomendacion-imagen rounded-circle" alt="...">
-                        <p class="recomendacion-texto"> Es un placer recomendar a Gerardo, ya que desde el inicio de la
-                            licenciatura ha demostrado ser una persona muy comprometida y proactiva.</p>
-                        <div class="recomendacion-info">
-                            <p class="amigo">Enrique</p>
-                            <p class="cargo">Lic. Informática</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#recomendaciones" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#recomendaciones" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contactme" class="contact section-oscura">
+    <section id="contacto" class="contact-section">
         <div class="container">
-            <div class="container text-center rectangulo d-flex justify-content-evenly">
-                <div class="row">
-                    <div class="col-12 col-md-4 seccion-titulo">
-                        Escribeme
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-dark mb-3 fade-in">Contacto</h2>
+                    <p class="text-muted fade-in">¿Tienes un proyecto en mente? ¡Hablemos sobre ello!</p>
+                    <hr class="divider my-4 fade-in">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 fade-in">
+                    <div class="contact-info">
+                        <div class="d-flex contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h5>Ubicación</h5>
+                                <p class="text-muted">Puerto Escondido, Oaxaca, México</p>
+                            </div>
+                        </div>
+                        <div class="d-flex contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                                    <path
+                                        d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                                <p class="text-muted">cortezgerardo552@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h5>Teléfono</h5>
+                                <p class="text-muted">+52 954 161 6329</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-4 description">
-                        El medio donde mas estoy activo para trabajar es mi correo electronico.
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <a href="mailto: gerardo.cortezramos@aulavirtual.umar.mx">
-                            <button type="button">
-                                Contacto
-                                <i class="bi-envelope-check"></i>
-                            </button>
-                        </a>
+                </div>
+                <div class="col-lg-7 fade-in">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" id="nombre" name="nombre"
+                                        placeholder="Tu nombre" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Tu email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5"
+                                    placeholder="Tu mensaje" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-submit" id="submitButton">
+                                    Enviar Mensaje <i class="fas fa-paper-plane ms-2"></i>
+                                </button>
+                            </div>
+                            <div class="mt-3">
+                                <p id="formStatus" class="text-center"></p>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="section-oscura d-flex flex-column aling-items-center justify-content-center">
-        <img class="footer-icon" src="./images/perfil.png" alt="Logo profile">
-        <p class="footer-text text-center">
-            "El código es como un rompecabezas: <br>cada error te acerca un paso más a la solución."
-        </p>
-        <div class="icons-sn d-flex flex-wrap aling-items-center justify-content-center">
-            <a href="https://x.com/Gerardo35659881?t=CZLrZTutsA6faLHITgB9SA&s=09" target="_blank"
-                rel="noopener noreferrer">
-                <i class="bi-twitter"></i>
-            </a>
-            <a href="https://www.facebook.com/gera.11.sp?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
-                <i class="bi-facebook"></i>
-            </a>
-            <a href="https://github.com/GeraSP11" target="_blank" rel="noopener noreferrer">
-                <i class="bi-github"></i>
-            </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
-                <i class="bi-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com/invites/contact/?igsh=13kprr47oudjn&utm_content=khvtfel" target="_blank"
-                rel="noopener noreferrer">
-                <i class="bi-instagram"></i>
-            </a>
-            <a href="mailto: gerardo.cortezramos@aulavirtual.umar.mx" target="_blank" rel="noopener noreferrer">
-                <i class="bi-envelope"></i>
-            </a>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center fade-in">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/gera.11.sp?mibextid=ZbWKwL" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Gerardo35659881?t=CZLrZTutsA6faLHITgB9SA&s=09" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/invites/contact/?igsh=13kprr47oudjn&utm_content=khvtfel"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="copyright">&copy; <span id="year"></span> Gerardo Cortez Ramos. Todos los derechos
+                        reservados.</p>
+                </div>
+            </div>
         </div>
-        <div class="author"> Gera - DiseñoWeb -- UMAR (2024) &#169; </div>
     </footer>
 
-    <!-- Bootstrap JS offline -->
-    <!-- <script src="./js/bootstrap.min.js"></script> -->
-    <Bootstrap JS online>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
-        <!-- My JS -->
-        <script src="./js/main.js"></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("8h1vyc1seF6pzcZVv");
+    </script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

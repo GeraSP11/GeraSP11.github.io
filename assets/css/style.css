@@ -1,0 +1,432 @@
+:root {
+    --color-gris: #4c4c4c;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Estilos para la navbar */
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en los enlaces de navegación */
+.navbar .nav-link {
+    position: relative;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--bs-dark);
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+    width: 100%;
+}
+
+/* Ajustar espacio en móvil */
+@media (max-width: 991.98px) {
+    .navbar .nav-item {
+        margin: 8px 0;
+    }
+
+    .navbar .btn {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+.navbar.scrolled {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    height: calc(100vh - 76px);
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para la imagen de perfil */
+.profile-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: relative;
+}
+
+/* Forma irregular detrás de la imagen */
+.blob-shape {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    background-color: var(--bs-dark);
+    z-index: 1;
+    animation: blob-animation 8s ease-in-out infinite;
+}
+
+@keyframes blob-animation {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+/* Estilos para los iconos sociales */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-gris);
+    color: white;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icon i {
+    font-size: 18px;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+/* Media queries para dispositivos más pequeños */
+@media (max-width: 991.98px) {
+    .profile-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .hero-section .btn {
+        margin: 0 5px;
+    }
+
+    .hero-section .list-inline {
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para sección de proyectos */
+.projects-section {
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: var(--color-gris);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Estilos para las tarjetas de proyectos */
+.project-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+/* Estado normal - sin hover */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+/* Efecto de resaltado al pasar el cursor */
+.project-card.highlighted {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Borde de resaltado con animación */
+.project-card.highlighted::before {
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border: 2px solid var(--color-gris);
+    border-radius: 15px;
+}
+
+/* Indicador visual de "hover para más imágenes" */
+.project-card .carousel::after {
+    content: 'Hover para ver más';
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Ocultar el indicador cuando se está interactuando */
+.project-card.highlighted .carousel::after {
+    opacity: 0;
+}
+
+/* Mejora de controles del carrusel */
+.project-card .carousel-control-prev,
+.project-card .carousel-control-next {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card.highlighted .carousel-control-prev,
+.project-card.highlighted .carousel-control-next {
+    opacity: 0.8;
+}
+
+/* Mejorar la apariencia de los botones de acción */
+.project-card .card-footer .btn {
+    transition: all 0.3s ease;
+}
+
+/* Estilo cuando el ratón pasa sobre las etiquetas de tecnología */
+.project-card.highlighted .tech-stack .badge {
+    transform: scale(1.05);
+}
+
+/* Estilos para la sección de habilidades */
+.skills-section {
+    background-color: #ffffff;
+}
+
+/* Estilos para las pestañas de categorías */
+.skill-tabs .nav-pills {
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.skill-tabs .nav-link {
+    padding: 8px 20px;
+    border-radius: 30px;
+    color: #555;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-tabs .nav-link.active {
+    background-color: var(--bs-dark);
+    box-shadow: 0 4px 15px rgba(var(--bs-dark-rgb), 0.35);
+}
+
+/* Estilos para las tarjetas de habilidades */
+.skill-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Iconos de habilidades */
+.skill-icon {
+    font-size: 40px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    color: var(--color-gris);
+    background-color: rgba(var(--bs-dark-rgb), 0.1);
+}
+
+/* Para iconos de lenguajes que no tienen icono en FontAwesome */
+.programming-icon {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Nombre de la habilidad */
+.skill-name {
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* Barra de progreso */
+.skill-level {
+    width: 100%;
+}
+
+/* Soft skills sin barra de progreso */
+.soft-skill .skill-icon {
+    background-color: #f8f9fa;
+    color: #444;
+}
+
+.soft-skill:hover .skill-icon {
+    color: var(--color-gris);
+    background-color: rgba(var(--bs-dark-rgb), 0.1);
+}
+
+/* Responsividad para móviles */
+@media (max-width: 767.98px) {
+    .skill-tabs .nav-pills {
+        flex-wrap: wrap;
+    }
+
+    .skill-tabs .nav-link {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+}
+
+.contact-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-item {
+    margin-bottom: 25px;
+}
+
+.contact-info-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-gris);
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--color-gris);
+}
+
+.btn-submit {
+    background-color: var(--color-gris);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--color-gris);
+    transform: translateY(-3px);
+}
+
+/* Estilos para el footer */
+.footer {
+    background: var(--color-gris);
+    color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #f8f9fa;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.copyright {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
