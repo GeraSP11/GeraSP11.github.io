@@ -1,34 +1,27 @@
-// Función de cambio de apariencia en la navbar al hacer scroll
-function handleNavbarOnScroll() {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-}
-
-// Función para cerrar el menú móvil al hacer clic en un enlace
-function closeMobileMenuOnClick() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const menuToggle = document.getElementById('navbarNav');
-    const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
-
-    navLinks.forEach(function (link) {
-        link.addEventListener('click', function () {
-            if (menuToggle.classList.contains('show')) {
-                bsCollapse.toggle();
-            }
-        });
+$(function () {
+    // Navbar: cambio de apariencia al hacer scroll
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 50) {
+            $('.navbar').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+        }
     });
-}
 
-// Función de configuración de carruseles de proyectos
-function initProjectCarousels() {
-    const projectCards = document.querySelectorAll('.project-card');
+    // Menú móvil: cerrar al hacer clic en un enlace
+    $('.nav-link').on('click', function () {
+        const $menuToggle = $('#navbarNav');
+        const bsCollapse = new bootstrap.Collapse($menuToggle[0], { toggle: false });
 
-    projectCards.forEach(card => {
-        const carousel = card.querySelector('.carousel');
+        if ($menuToggle.hasClass('show')) {
+            bsCollapse.toggle();
+        }
+    });
+
+    // Carruseles de proyectos
+    $('.project-card').each(function () {
+        const $card = $(this);
+        const carousel = $card.find('.carousel')[0];
 
         const carouselInstance = new bootstrap.Carousel(carousel, {
             interval: 2500,
@@ -36,96 +29,56 @@ function initProjectCarousels() {
             wrap: true
         });
 
-        // Pausar al principio
         carouselInstance.pause();
 
-        // Activar carrusel al pasar el ratón
-        card.addEventListener('mouseenter', function () {
+        $card.on('mouseenter', function () {
             carouselInstance.cycle();
-            card.classList.add('highlighted');
+            $card.addClass('highlighted');
         });
 
-        // Pausar carrusel al salir el ratón
-        card.addEventListener('mouseleave', function () {
+        $card.on('mouseleave', function () {
             carouselInstance.pause();
-            card.classList.remove('highlighted');
+            $card.removeClass('highlighted');
         });
     });
-}
 
-// Función para inicializar los tooltips de las habilidades
-function initTooltips() {
-    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
+    // Tooltips
+    $('[data-bs-toggle="tooltip"]').each(function () {
+        new bootstrap.Tooltip(this);
     });
-}
 
-// Función para el hover en las skill cards
-function handleSkillCardHover() {
-    const skillCards = document.querySelectorAll('.skill-card');
-    skillCards.forEach(card => {
-        card.addEventListener('mouseenter', function () {
-            this.classList.add('skill-hover');
-        });
+    // Hover en skill cards
+    $('.skill-card').hover(
+        function () {
+            $(this).addClass('skill-hover');
+        },
+        function () {
+            $(this).removeClass('skill-hover');
+        }
+    );
 
-        card.addEventListener('mouseleave', function () {
-            this.classList.remove('skill-hover');
-        });
-    });
-}
+    // Año actual en el footer
+    $('#year').text(new Date().getFullYear());
 
-// Función para mostrar el año actual en el copyright
-function updateYearInFooter() {
-    document.getElementById('year').textContent = new Date().getFullYear();
-}
-
-// Función para el envío de correo electrónico desde el formulario de contacto
-function initContactForm() {
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
+    // Formulario de contacto con emailJS
+    $('#contactForm').on('submit', function (e) {
         e.preventDefault();
 
-        const button = document.getElementById("submitButton");
-        const status = document.getElementById("formStatus");
+        const $button = $('#submitButton');
+        const $status = $('#formStatus');
 
-        button.disabled = true;
-        button.innerText = "Enviando...";
+        $button.prop('disabled', true).text("Enviando...");
 
         emailjs.sendForm("service_71mogvg", "template_y7842rf", this)
             .then(function (response) {
-                status.innerText = "✅ Mensaje enviado con éxito.";
-                document.getElementById("contactForm").reset();
+                $status.text("✅ Mensaje enviado con éxito.");
+                $('#contactForm')[0].reset();
             }, function (error) {
                 console.error(error);
-                status.innerText = "❌ Error al enviar el mensaje. Intenta más tarde.";
+                $status.text("❌ Error al enviar el mensaje. Intenta más tarde.");
             })
             .finally(() => {
-                button.disabled = false;
-                button.innerHTML = 'Enviar Mensaje <i class="fas fa-paper-plane ms-2"></i>';
+                $button.prop('disabled', false).html('Enviar Mensaje <i class="fas fa-paper-plane ms-2"></i>');
             });
     });
-}
-
-// Inicialización de todas las funciones
-document.addEventListener('DOMContentLoaded', function () {
-    // Navbar
-    window.addEventListener('scroll', handleNavbarOnScroll);
-
-    // Menú móvil
-    closeMobileMenuOnClick();
-
-    // Carruseles de proyectos
-    initProjectCarousels();
-
-    // Tooltips
-    initTooltips();
-
-    // Skill card hover
-    handleSkillCardHover();
-
-    // Actualización del año en el footer
-    updateYearInFooter();
-
-    // Formulario de contacto
-    initContactForm();
 });
